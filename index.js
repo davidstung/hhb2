@@ -11,7 +11,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-    var html = fs.readFileSync(htmlfile).toString('utf8')
+    var html = fs.readFileSync(htmlfile).toString()
     response.send(html)
 })
 
