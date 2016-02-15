@@ -4,7 +4,7 @@ var logger = require('morgan');
 var app = express()
 app.use(logger());
 
-var htmlfile = "index.html";
+var htmlfile = 'index.html';
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
