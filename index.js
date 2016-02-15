@@ -1,8 +1,8 @@
-var fs = require ('fs')
+//var fs = require ('fs')
 var express = require('express')
-var logger = require('morgan')
+//var logger = require('morgan')
 var app = express()
-app.use(logger());
+//app.use(logger());
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
