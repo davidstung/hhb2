@@ -1,5 +1,6 @@
 var fs = require ("fs");
 var express = require('express')
+var logger = require('morgan');
 var app = express()
 app.use(logger());
 
