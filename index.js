@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
   var html = fs.readFileSync(htmlfile).toString('utf8');
-  response.send(html);
+  response.send("html");
 });
 
 app.listen(app.get('port'), function() {
