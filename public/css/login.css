@@ -13,15 +13,78 @@
 * {
     font-family: 'Roboto', sans-serif;
 }*/
+.container
+{
+/*    position:fixed;*/
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/do2.png");
+}
+
+.container2
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    padding-left: 50 px;
+    padding-right: 50 px;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    height: 70%;
+/*     background-image: url("../images/testimonial.png");
+*/     background-color: #13203A;
+}
+
+.container3{
+  background-color: #EFEFEF;
+  overflow-y:hidden;
+}
+.container2 a {
+    vertical-align: top;
+    display: inline-block;
+    display: inline;
+    zoom:1;
+}
+
+.accordion-heading a {
+    font-size: 36px;
+    line-height: 100px;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size:0;
+    line-height: 0;
+}
+
+.anthem
+{
+    background-image: url("../images/bluecross.png");
+    background: none;
+    border-color:none;
+    border-style: none;
+}
 
 #login-modal .modal-dialog {
     width: 350px;
-/*    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-top: -25px;
-    margin-left: 0px;
-    padding: 20px;*/
    
 }
 
@@ -85,11 +148,6 @@
    #    override the bootstrap configs     #
    ######################################### */
 
-html, body {
-    margin:0;
-    padding:0;
-    height:100%;
-}
 
 .modal {
     overflow: auto !important;
@@ -163,4 +221,117 @@ html, body {
 
 .form-control {
   border-radius: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x:hidden;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+
+}
+
+.input-group-btn{
+  margin-right: 5px;
+}
+
+.dropdown-menu {
+
+left: 50%;
+right: auto;
+/*text-align: center;*/
+  transform: translate(-50%, 0%);
+}
+
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+    -moz-transition: width 4.25s linear;
+    -o-transition: width 4.25s linear;
+    transition: width 4.25s linear;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.testimonial
+{
+    padding-left: 500 px;
+    padding-right: 500 px;
 }
