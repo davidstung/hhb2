@@ -1,3 +1,5 @@
+
+
 $(function() {
     
     var $formLogin = $('#login-form');
@@ -7,7 +9,10 @@ $(function() {
     var $modalAnimateTime = 300;
     var $msgAnimateTime = 150;
     var $msgShowTime = 2000;
-   
+  
+
+
+
     $("form").submit(function () {
         switch(this.id) {
             case "login-form":
@@ -46,6 +51,10 @@ $(function() {
         return false;
     });
     
+// var usersRef = ref.child("users");
+// usersRef.set('#login_username');
+
+
     $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
     $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
     $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
