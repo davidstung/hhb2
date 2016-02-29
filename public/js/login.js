@@ -1,4 +1,6 @@
 
+/*JS for modal popup functionality need to update to remove mention of logins etc...
+unedited example can be found here: http://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects*/
 
 $(function() {
     

@@ -1,130 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Happy Healthy Better</title>
+	<!-- include referenced in Startup Engineering course-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css"> -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
 	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="js/login.js" type="text/javascript"></script>
-	
+	<script src="js/login.js" type="text/javascript"></script>	
 	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<!-- firebase script/not functional atm-->
 	<script src="js/main.js" type="text/javascript"></script>
 	<link href="css/login.css" rel="stylesheet" text="text/css">
-
-	<style type="text/css">
-
-
-	/* Large desktop */
-	@media (min-width: 1200px) {
-		body {
-			/*	 background-image: url("../images/background.png");*/
-			overflow-y:hidden;
-			background-position: center center
-			background-size:100% auto;
-			-moz-background-size: 100% auto;
-			-o-background-size: 100% auto;
-			-webkit-background-size: 100% auto;
-			margin:0px;
-
-		}
-		.linediv-l {
-			border-right: 1px white solid;
-		}
-		.linediv-r {
-			border-left: 1px white solid;
-		}
-	}
-
-	/* Landscape phones and down */
-	@media (max-width: 480px) {
-		.copy {
-			padding: 2.5% 10%;
-		}
-		.linediv-l {
-			border-bottom: 1px white solid;
-		}
-		.linediv-r {
-			border-top: 1px white solid;
-		}
-	}
-
-
-	/* All form factors */
-
-	/* Main body and headings */
-	@font-face {
-		font-family: "ProximaNova-Light";
-		src: url("../font/ProximaNova-Light.otf");
-
-	}
-
-	body {
-		font-family: "ProximaNova-Light";
-		background-repeat: no-repeat;
-
-	}
-	.heading, .subheading {
-		font-family: "ProximaNova-Bold";
-		color: white;
-		font-size: 100px;
-	}
-
-
-	h1 {
-		font-size: 72px;
-		line-height: 80px;
-	}
-	h2 {
-		font-size: 37px;
-		line-height: 80px;
-		font-family: "ProximaNova-Regular";
-		color: #222;
-	}
-
-	h3 {
-		font-size: 37px;
-		line-height: 50px;
-		font-family: "ProximaNova-Regular";
-		color: #6f6f6f;
-	}
-
-	h4 {
-		font-size: 18px;
-		line-height: 22px;
-		font-family: "ProximaNova-Regular";
-		color: #FE9949;
-	} 
-
-	h5{
-		font-size: 72px;
-		line-height: 80px;
-		font-family: "ProximaNova-Regular";
-		color: #6f6f6f;
-	}
-
-	h6{
-		font-size: 37px;
-		line-height: 50px;
-		font-family: "ProximaNova-Regular";
-		color: #3D73E0;
-	}
-
-
-
-
-	</style>
 </head>
-
 <body>
 
+	<!-- code for carousel-->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -132,21 +25,18 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-
-
 				<div class="fill" max-width= "100%" max-height="100%" style=background-image:url("../images/background.png");>
 					<div class="container">
-
+							
+						<!-- code for mailing list button, need to update to store email to something-->
 						<div class="row" style="padding-top:30px">
 							<img  style="padding-top: 20px;display: float:left" height="10%" width="10%" src="../images/hhb.png")</img>
 							<p class="text-right" style="padding-top:60px;padding-right:40px;float:right"><a href="#" class="btn btn-primary btn-lg outline" role="button" data-toggle="modal" data-target="#login-modal">Join our mailing list!</a></p>
 						</div>
-
 						<div class = "row-fluid heading">
 							<div class ="span12">
 								<h1 align="center" style="padding-top: 50px">Doctor's cost?</h1>
 								<h1 align = "center"> Find out now. </h1>
-
 							</div>
 						</div>
 						<div class="dropdown" align="center" style=";padding-top:50px">
@@ -159,9 +49,7 @@
 									<li><a href="#">Primary Care</a></li>
 									<li><a href="#">Endocrinologist</a></li>
 									<li><a href="#">Orthodontist</a></li>
-
 								</ul>
-
 							</div>
 							<div class= "btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -171,10 +59,8 @@
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
 									<li><a href="#">95034</a></li>
 									<li><a href="#">95112</a></li>
-
 								</ul>
 							</div>
-
 							<div class="btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									I have this insurance
@@ -185,18 +71,15 @@
 									<li><a href="#">Blue Shield</a></li>
 									<li><a href="#">Healthnet</a></li>
 									<li><a href="#">United</a></li>
-
 								</ul>
 							</div>
-
 							<div class="btn-group">
-
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="This is my member #" aria-describedby="basic-addon2">
-
-
 								</div>							
 							</div>
+
+							<!-- code for button, need to update to function solely as a button-->
 							<div class="row" style="padding-top:50px">
 
 								<p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Oh Yeahh</a></p>
@@ -208,8 +91,9 @@
 
 
 			<div class="item">
-				<!-- Set the second background image using inline CSS below. -->
 				<div class="fill"  max-width= "auto" max-height="100%" style=background-image:url("../images/specialist2.png");>
+
+					<!-- code for mailing list button, need to update to store email to something-->
 					<div class="container">
 						<div class="row" style="padding-top:30px">
 							<img  style="padding-top: 20px;display: float:left" height="10%" width="10%" src="../images/hhb.png")</img>
@@ -219,7 +103,6 @@
 							<div class ="span12">
 								<h1 align="center" style="padding-top: 50px">Need a specialist?</h1>
 								<h1 align = "center"> Find one now. </h1>
-
 							</div>
 						</div>
 						<div class="dropdown" align="center" style=";padding-top:50px">
@@ -232,9 +115,7 @@
 									<li><a href="#">Primary Care</a></li>
 									<li><a href="#">Endocrinologist</a></li>
 									<li><a href="#">Orthodontist</a></li>
-
 								</ul>
-
 							</div>
 							<div class= "btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -247,7 +128,6 @@
 
 								</ul>
 							</div>
-
 							<div class="btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									I have this insurance
@@ -258,20 +138,16 @@
 									<li><a href="#">Blue Shield</a></li>
 									<li><a href="#">Healthnet</a></li>
 									<li><a href="#">United</a></li>
-
 								</ul>
 							</div>
-
 							<div class="btn-group">
-
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="This is my member #" aria-describedby="basic-addon2">
-
-
 								</div>							
 							</div>
-							<div class="row" style="padding-top:50px">
 
+							<!-- code for button, need to update to function solely as a button-->
+							<div class="row" style="padding-top:50px">
 								<p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Hmmmm</a></p>
 							</div>
 						</div>
@@ -279,11 +155,10 @@
 				</div>
 			</div>
 
-
-
 			<div class="item">
-				<!-- Set the second background image using inline CSS below. -->
 				<div class="fill" style=background-image:url("../images/appointment.png");>
+
+					<!-- code for mailing list button, need to update to store email to something-->
 					<div class="container">
 						<div class="row" style="padding-top:30px">
 							<img  style="padding-top: 20px;display: float:left" height="10%" width="10%" src="../images/hhb.png")</img>
@@ -293,7 +168,6 @@
 							<div class ="span12">
 								<h1 align="center" style="padding-top: 50px">Need an appointment?</h1>
 								<h1 align = "center"> Book now. </h1>
-
 							</div>
 						</div>
 						<div class="dropdown" align="center" style=";padding-top:50px">
@@ -306,9 +180,7 @@
 									<li><a href="#">Primary Care</a></li>
 									<li><a href="#">Endocrinologist</a></li>
 									<li><a href="#">Orthodontist</a></li>
-
 								</ul>
-
 							</div>
 							<div class= "btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -318,10 +190,8 @@
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
 									<li><a href="#">95034</a></li>
 									<li><a href="#">95112</a></li>
-
 								</ul>
 							</div>
-
 							<div class="btn-group">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									I have this insurance
@@ -332,28 +202,22 @@
 									<li><a href="#">Blue Shield</a></li>
 									<li><a href="#">Healthnet</a></li>
 									<li><a href="#">United</a></li>
-
 								</ul>
 							</div>
-
 							<div class="btn-group">
-
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="This is my member #" aria-describedby="basic-addon2">
-
-
 								</div>							
 							</div>
 
+							<!-- code for button, need to update to function solely as a button-->
 							<div class="row" style="padding-top:50px">
-
 								<p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Hip Hip</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 
@@ -365,7 +229,7 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
-	</div><!-- /.carousel -->
+	</div><!-- /end .carousel -->
 
 
 	<!-- BEGIN # MODAL LOGIN -->
@@ -390,36 +254,25 @@
 								<span id="text-login-msg">Join our mailing list by entering your email</span>
 							</div>
 							<input id="login_email" class="form-control" type="text" placeholder="Email me @" required>
-							
-							
 						</div>
 						<div class="modal-footer">
 							<div>
 								<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
 							</div>
-							
 						</div>
 					</form>
 					<!-- End # Login Form -->
-
-					
-
 				</div>
 				<!-- End # DIV Form -->
-
 			</div>
 		</div>
 
 		<script>
 		$('#myCarousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 5000 //changes the speed or the carousel 
     })
 		</script>
-		<script>
-		$('#myCarousel2').carousel({
-        interval: 5000 //changes the speed
-    })
-		</script>
+
 
 	</body>
 	</html>

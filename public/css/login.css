@@ -7,16 +7,92 @@
    #   Last Change   : 08/02/2015
    #
    ##################################################################### */
-   
-/*@import url(http://fonts.googleapis.com/css?family=Roboto);
+  
 
-* {
-    font-family: 'Roboto', sans-serif;
-    }*/
+  /* Large desktop Responsive design from Balaji Srinvasan Course explanation can be found in HW2*/
+  @media (min-width: 1200px) {
+    body {
+      overflow-y:hidden;
+    }
+    .linediv-l {
+      border-right: 1px white solid;
+    }
+    .linediv-r {
+      border-left: 1px white solid;
+    }
+  }
+
+  /* Landscape phones and down */
+  @media (max-width: 480px) {
+    .copy {
+      padding: 2.5% 10%;
+    }
+    .linediv-l {
+      border-bottom: 1px white solid;
+    }
+    .linediv-r {
+      border-top: 1px white solid;
+    }
+  }
+  /* Main body and headings */
+  @font-face {
+    font-family: "ProximaNova-Light";
+    src: url("../font/ProximaNova-Light.otf");
+
+  }
+
+  body {
+    font-family: "ProximaNova-Light";
+    background-repeat: no-repeat;
+
+  }
+  .heading, .subheading {
+    font-family: "ProximaNova-Bold";
+    color: white;
+    font-size: 100px;
+  }
 
 
+  h1 {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  h2 {
+    font-size: 37px;
+    line-height: 80px;
+    font-family: "ProximaNova-Regular";
+    color: #222;
+  }
 
+  h3 {
+    font-size: 37px;
+    line-height: 50px;
+    font-family: "ProximaNova-Regular";
+    color: #6f6f6f;
+  }
 
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "ProximaNova-Regular";
+    color: #FE9949;
+  } 
+
+  h5{
+    font-size: 72px;
+    line-height: 80px;
+    font-family: "ProximaNova-Regular";
+    color: #6f6f6f;
+  }
+
+  h6{
+    font-size: 37px;
+    line-height: 50px;
+    font-family: "ProximaNova-Regular";
+    color: #3D73E0;
+  }
+
+/* styling for the modal popups with jQuery effects from bootsnip*/
 
 #login-modal .modal-dialog {
   width: 350px;
@@ -158,13 +234,11 @@
     border-radius: 0px;
   }
 
+  /*  make the carousel full screen */
   html,
   body {
     height: 100%;
-  /*  overflow-x:hidden;
-    padding:0;
-    margin:0;*/
-
+ 
   }
 
   .carousel,
@@ -193,18 +267,9 @@
     margin:0;
   }
 
-
-
-  footer {
-    margin: 50px 0;
-
-  }
-
   .input-group-btn{
     margin-right: 5px;
   }
-
-
 
   .transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
     /* We make the transition time shorter to avoid the slide transitioning
@@ -216,10 +281,8 @@
     transition: width 4.25s linear;
   }
 
-
-
 /***********************
-  OUTLINE BUTTONS
+  OUTLINE MAILING LIST BUTTON 
 ************************/
 
 .btn.outline {
